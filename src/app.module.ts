@@ -4,6 +4,9 @@ import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { join } from 'path';
 import { DatabaseModule } from './database/database.module';
 import { StudentsModule } from './modules/students/students.module';
+import { DisciplineModule } from './modules/discipline/discipline.module';
+import { LessonModule } from './modules/lessons/lesson.module';
+import { ContentModule } from './modules/contents/discipline.module';
 
 @Module({
   imports: [
@@ -14,6 +17,9 @@ import { StudentsModule } from './modules/students/students.module';
     }),
     DatabaseModule,
     StudentsModule,
+    DisciplineModule,
+    LessonModule,
+    ContentModule,
   ],
   controllers: [],
   providers: [],
